@@ -1,0 +1,40 @@
+Part 1:
+1. Connect all plugins/fonts/css/bootstrap links
+2. Set the body's background color to pink
+3. Start working on a navbar (create a nav container, a navbar-brand, a toggler
+icon, and links that should collapse into a toggler button)
+4. Working on CSS (changing the font in body, changin the navbar-brand and 
+navLinks color and weight, adjusting paddings, overhauling buttons to the 
+final solution)
+
+Part 2:
+Adjusting grid (alternating images and text "left and right")
+5. Adding container-fluid, putting two 50/50 columns, deleting padding of 
+container-fluid (adding class "px-0"), adding image to a second column with "img-fluid" class
+6. Using flexbox-like properties to align "Museum Of Candy" sign to the left
+of the picture, so it would be in the center of the column, using
+align-items property.
+7. To hide a "Museum of Candy" sign you need to wrap it in div to be able
+to hide it.
+8. Add another section similar to the previous one, to rearrange the order use order-1/order-2,
+And adapt to size with order-lg-1/2 depending on whats going first/second before or after "responsiveness"
+9. A little not-so-important tweaking, e.g. adding align-items-center to align items vertically,
+justify-content-center to align horizontally, adding icon with classes :w-25 d-none d-lg-inline
+to hide icon when the screen gets smaller, etc.
+10. Adding css properties to make things prettier (font-weight/font-size/color/line-height/etc.)
+11. Optionally add some not taken name in class structure, like "blurp/toto" to refer to it in css,
+e.g. ".popo h2"
+12. To add another section you can just duplicate html code of one section and adjust
+accordingly.
+13. To create margin between rows, give them a special unique class, like "content", and add margin
+(e.g. mb-5 mb-lg-0) to every row with "content class".
+14. Adding background color to navbar when scrolling down, with adding script tag at the bottom (for practices purpose):
+<script>
+    $(function () {
+        $(document).scroll(function(){
+            var $nav = $("#mainNav");
+            $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        })
+    })
+</script>
+DONT FORGET TO INCLUDE JQUERY SCRIPT!

@@ -1,0 +1,11 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory `/Users/qabderus/Documents/C++/C04/ex00'
+c++ -Wall -Wextra -Werror -std=c++98 -o Animal.o -c Animal.cpp
+ 
+c++ -Wall -Wextra -Werror -std=c++98 -o Dog.o -c Dog.cpp
+c++ -Wall -Wextra -Werror -std=c++98 -o Cat.o -c Cat.cpp
+c++ -Wall -Wextra -Werror -std=c++98 -o WrongAnimal.o -c WrongAnimal.cpp
+c++ -Wall -Wextra -Werror -std=c++98 -o WrongCat.o -c WrongCat.cpp
+c++ main.o Animal.o Dog.o Cat.o WrongAnimal.o WrongCat.o -o ex00
+make: Leaving directory `/Users/qabderus/Documents/C++/C04/ex00'
+ 
